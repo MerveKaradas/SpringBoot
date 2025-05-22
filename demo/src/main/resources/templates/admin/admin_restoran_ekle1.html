@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doyur Restoran Ekle</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        form {
+            width: 300px;
+            margin: 50px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        input {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 15px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        button {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Doyur Yönetici Sistemi</h1>
+        <h1>Restoran Ekle</h1>
+    </header>
+
+    <form id="restoranEkleForm">
+        <h2>Restoran Sahibinin</h2>
+        <label for="firstName">Adı:</label>
+        <input type="text" id="firstName" name="firstName">
+
+        <label for="lastName">Soyadı:</label>
+        <input type="text" id="lastName" name="lastName">
+
+        <label for="phone">Telefon:</label>
+        <input type="tel" id="phone" name="phone">
+
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email">
+
+        <label for="password">Şifre:</label>
+        <input type="password" id="password" name="password">
+
+        <button type="button" onclick="redirectToRestoranEkle2()">Devam Et</button>
+    </form>
+
+    <script>
+        function redirectToRestoranEkle2() {
+            window.location.href = "admin_restoran_ekle2.html";
+        }
+    </script>
+</body>
+</html>
+
